@@ -11,7 +11,11 @@ namespace Campus.Model
         public int Id { get; set; }    
         public string Name { get; set; }
         public List<Teacher> Teachers { get; set; }
-        public List<Student> Students { get; set; } 
+        public List<Student> Students { get; set; }
+
+        public School()
+        {
+        }
 
         public School(int id, string name, List<Teacher>? teachers, List<Student>? students)
         {

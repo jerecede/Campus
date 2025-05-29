@@ -1,11 +1,17 @@
 ﻿namespace Campus.Model
 {
-    public class Teacher
+    internal class Teacher
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Subject { get; set; }
         public List<Course> Courses { get; set; }
+        public int SchoolId { get; set; }
+        public School? School { get; set; }
+        public Teacher()
+        {
+        }
+
         public Teacher(int id, string name, string subject, List<Course>? courses)
         {
             Id = id;
